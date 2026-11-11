@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم الأدمن</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- شاشة تسجيل الدخول -->
+        <div id="login-box" class="card">
+            <h2>تسجيل دخول الأدمن</h2>
+            <form id="login-form">
+                <input type="text" id="admin-user" placeholder="اسم المستخدم (admin)" required>
+                <input type="password" id="admin-pass" placeholder="كلمة المرور (123456)" required>
+                <button type="submit" class="btn">دخول</button>
+            </form>
+        </div>
+
+        <!-- لوحة الإدارة -->
+        <div id="dashboard" class="card hidden">
+            <h2>لوحة التحكم بالموقع</h2>
+            <p>مرحباً بك يا أدمن! يمكنك تعديل المحتوى المباشر للموقع من هنا:</p>
+            <hr><br>
+
+            <h3>1. تعديل العنوان الرئيسي</h3>
+            <input type="text" id="edit-hero-title" placeholder="العنوان الرئيسي الجديد">
+            
+            <h3>2. تعديل الوصف الشخصي (قسم عني)</h3>
+            <textarea id="edit-about-text" rows="4" placeholder="النص الجديد..."></textarea>
+
+            <button onclick="saveChanges()" class="btn">حفظ التغييرات</button>
+            <button onclick="logoutAdmin()" class="btn btn-danger">تسجيل خروج</button>
+            <br><br>
+            <a href="index.html">العودة للصفحة الرئيسية للموقع</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

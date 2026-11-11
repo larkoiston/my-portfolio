@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي الاحترافي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo">موقعي الشخصي</div>
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عني</a></li>
+            <li><a href="#skills">المهارات</a></li>
+            <li><a href="#projects">المشاريع</a></li>
+            <li><a href="#contact">تواصل معي</a></li>
+            <li><a href="admin.html" class="admin-link">دخول الأدمن</a></li>
+        </ul>
+    </nav>
+
+    <!-- الواجهة الرئيسية -->
+    <section id="home" class="hero">
+        <h1 id="hero-title">أهلاً بك في موقعي الشخصي</h1>
+        <p id="hero-subtitle">مهندس ومطور سيبراني / مبرمج</p>
+        <a href="#contact" class="btn">تواصل معي</a>
+    </section>
+
+    <!-- قسم عني -->
+    <section id="about" class="section">
+        <h2>نبذة عني</h2>
+        <p id="about-text">أنا مبرمج ومتخصص في مجالات التقنية والأمن السيبراني، أعمل على تطوير وتأمين التطبيقات والأنظمة.</p>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section id="skills" class="section bg-alt">
+        <h2>المهارات</h2>
+        <div class="skills-grid" id="skills-container">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Linux & Cybersecurity</div>
+            <div class="skill-card">Web Development (HTML/CSS/JS)</div>
+            <div class="skill-card">Network Analysis</div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects" class="section">
+        <h2>أبرز المشاريع</h2>
+        <div class="projects-grid" id="projects-container">
+            <div class="project-card">
+                <h3>مشروع فحص الشبكات</h3>
+                <p>أداة مخصصة أُنشئت بلغة بايثون لتحليل واستكشاف الثغرات.</p>
+            </div>
+            <div class="project-card">
+                <h3>موقع شخصي متكامل</h3>
+                <p>تطوير موقع ويب تفاعلي مع لوحة تحكم مخصصة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section id="contact" class="section bg-alt">
+        <h2>تواصل معي</h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('تم استلام رسالتك بنجاح!');">
+            <input type="text" placeholder="الاسم الكامل" required>
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <textarea placeholder="رسالتك..." rows="5" required></textarea>
+            <button type="submit" class="btn">إرسال الرسالة</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
